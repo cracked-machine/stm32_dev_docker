@@ -1,0 +1,47 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            // DOCKER_BUILDKIT=1 docker build -t ghcr.io/<USER>/stm32_dev:10.3-2021.10 -f GNU10.3-2021.10/Dockerfile . --no-cache
+            "label": "rebuild GCC 10 dockerfile",
+            "type": "shell",
+            "command": "DOCKER_BUILDKIT=1 docker build -t ghcr.io/${input:ACCOUNT}/stm32_dev:${input:GCC10_DOCKER_TAG} -f GNU10.3-2021.10/Dockerfile . ${input:DOCKER_CACHE}"
+        },
+        {
+            // DOCKER_BUILDKIT=1 docker build -t ghcr.io/<USER>/stm32_dev:11.3.rel1 -f GNU11.3.rel1/Dockerfile . --no-cache
+            "label": "rebuild GCC 11 dockerfile",
+            "type": "shell",
+            "command": "DOCKER_BUILDKIT=1 docker build -t ghcr.io/${input:ACCOUNT}/stm32_dev:${input:GCC11_DOCKER_TAG} -f GNU11.3.rel1/Dockerfile . ${input:DOCKER_CACHE}"
+        }
+    ],
+    "inputs": [
+        {
+            "id": "GCC10_DOCKER_TAG",
+            "description": "Select a tag for GCC 10 rebuild",
+            "type": "promptString",
+            "default": "10.3-2021.10"
+        },
+        {
+            "id": "GCC11_DOCKER_TAG",
+            "description": "Select a tag for GCC 11 rebuild",
+            "type": "promptString",
+            "default": "11.3.rel1"
+        },
+        {
+            "id": "DOCKER_CACHE",
+            "description": "Build without cache?",
+            "type": "pickString",
+            "options": [
+                "",
+                "--no-cache"
+            ],
+            "default": ""
+        },
+        {
+            "id": "ACCOUNT",
+            "description": "Set the Github user account",
+            "type": "promptString",
+            "default": "cracked-machine"
+        }
+    ]
+}
