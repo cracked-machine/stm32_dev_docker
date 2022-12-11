@@ -5,7 +5,7 @@ Dockerfiles are available for the following dev environments:
 - ARM Cross Toolchain: GCC 10.3.1 arm-none-eabi
 - ARM Cross Toolchain: GCC 11.3 arm-none-eabi
 
-Use VSCode [tasks](stm32_dev_docker/.vscode/tasks.json) to build the images locally. 
+Use VSCode [tasks](.vscode/tasks.json) to build the images locally. 
 
 ## Run container instance
 
@@ -13,7 +13,7 @@ docker run --rm -it stm32_dev
 
 Recommended to use VSCode with `Dev Containers` installed. 
 
-Example [devcontainer.json](stm32_dev_docker/examples/devcontainer.json) file.
+Example [devcontainer.json](examples/devcontainer.json) file.
 
 ## Github Docker registry
 
@@ -95,7 +95,7 @@ If you change  this port, be sure to change it in the [launch.json](.vscode/laun
     "servertype": "jlink",
     "ipAddress": "<HOST>:9999",
     ```
-    Example [launch.json](stm32_dev_docker/examples/launch.json)
+    Example [launch.json](examples/launch.json)
 
 5. Press F5 to start debug in VSCode
 
@@ -113,11 +113,11 @@ Using JLink tools requires X11 Server installed on the host
 - `MacOS` - Install [XQuartz](https://www.xquartz.org/).
     
     - See instructions here - https://gist.github.com/sorny/969fe55d85c9b0035b0109a31cbcb088
-    - Change the `DISPLAY` option in [devcontainer.json](stm32_dev_docker/examples/devcontainer.json) to `host.docker.internal:0`
+    - Change the `DISPLAY` option in [devcontainer.json](examples/devcontainer.json) to `host.docker.internal:0`
 
 - `Windows` - Install [VcXserv](https://sourceforge.net/projects/vcxsrv/).
 
     - Select the option to `disable access control`.
-    - Change the `DISPLAY` option in [devcontainer.json](stm32_dev_docker/examples/devcontainer.json) to `host.docker.internal:0`
+    - Change the `DISPLAY` option in [devcontainer.json](examples/devcontainer.json) to `host.docker.internal:0`
 
 
