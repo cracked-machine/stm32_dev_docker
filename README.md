@@ -13,7 +13,7 @@ docker run --rm -it stm32_dev
 
 Recommended to use VSCode with `Dev Containers` installed. 
 
-Example [devcontainer.json](examples/devcontainer.json) file.
+See example [devcontainer.json](examples/devcontainer.json) file.
 
 ## Github Docker registry
 
@@ -95,7 +95,7 @@ If you change  this port, be sure to change it in the [launch.json](examples/lau
     "servertype": "jlink",
     "ipAddress": "<HOST>:9999",
     ```
-    Example [launch.json](examples/launch.json)
+    See example [launch.json](examples/launch.json)
 
 5. Press F5 to start debug in VSCode
 
