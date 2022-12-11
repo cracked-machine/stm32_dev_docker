@@ -121,3 +121,10 @@ Using JLink tools requires X11 Server installed on the host
     - Change the `DISPLAY` option in [devcontainer.json](examples/devcontainer.json) to `host.docker.internal:0`
 
 
+## Useful Links
+
+- [https://github.com/Marus/cortex-debug/blob/master/debug_attributes.md](https://github.com/Marus/cortex-debug/blob/master/debug_attributes.md)
+- [https://wiki.segger.com/J-Link_Remote_Server](https://wiki.segger.com/J-Link_Remote_Server)
+- [https://wiki.segger.com/J-Link_GDB_Server](https://wiki.segger.com/J-Link_GDB_Server)
+- [https://linux.die.net/man/1/gdb](https://linux.die.net/man/1/gdb)
+- [https://docs.docker.com/engine/reference/run/](https://docs.docker.com/engine/reference/run/)
