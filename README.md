@@ -66,7 +66,9 @@ If you change  this port, be sure to change it in the [launch.json](.vscode/laun
     ```
     JLinkRemoteServer --select USB -Port 9999
     ```
-4. From the docker guest terminal connect to the JLinkRemoteServer. Note the <HOST> is the localhost of the host OS.
+4. From the docker guest terminal connect to the JLinkRemoteServer. 
+
+    Note: `<HOST>` is the localhost IP address of the host OS.
     - Manual
         
         - GDBServer
