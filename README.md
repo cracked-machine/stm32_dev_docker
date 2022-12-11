@@ -1,10 +1,11 @@
 ## Build this docker image
 
-Dockerfiles are available for the following dev environments (Use tasks.json for commands)
+Dockerfiles are available for the following dev environments:
 
 - ARM Cross Toolchain: GCC 10.3.1 arm-none-eabi
 - ARM Cross Toolchain: GCC 11.3 arm-none-eabi
 
+Use VSCode [tasks](stm32_dev_docker/.vscode/tasks.json) to build the images locally. 
 
 ## Run container instance
 
