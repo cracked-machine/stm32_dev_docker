@@ -35,6 +35,7 @@ This container provides a consistent development environment independent of the 
 All that is requred on the host machine is 
 - `SEGGER J-Link Remote Server V7.58` 
 - Ability to run docker containers
+- VSCode (Optional but recommeneded)
 
 Below is an overview of the communication between the guest/host/target.
 
@@ -59,6 +60,9 @@ JLinkRemoteServer --select USB -Port 9999
 ```
 
 If you change  this port, be sure to change it in the [launch.json](examples/launch.json) settings so the `CortexDebug` extension knows how to connect to `JLinkRemoteServer`.
+
+Below two common workflows are outlined: `Manual` and `VSCode`.
+
 ### Command line use
 1. Connect your JLink to the target and power on the target. 
 2. Connect your JLink to the USB port of the host.
