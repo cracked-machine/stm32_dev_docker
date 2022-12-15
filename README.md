@@ -114,7 +114,7 @@ Below two common workflows are outlined: `Manual` and `VSCode`.
 
 5. Press F5 to start debug in VSCode
 
-## X11 Server <a name="x11"></a>
+## 5. X11 Server <a name="x11"></a>
 
 Using JLink tools requires X11 Server installed on the host 
 
@@ -136,7 +136,7 @@ Using JLink tools requires X11 Server installed on the host
     - Change the `DISPLAY` option in [devcontainer.json](examples/devcontainer.json) to `host.docker.internal:0`
 
 
-## Useful Links <a name="links"></a>
+## 6. Useful Links <a name="links"></a>
 
 - [https://github.com/Marus/cortex-debug/blob/master/debug_attributes.md](https://github.com/Marus/cortex-debug/blob/master/debug_attributes.md)
 - [https://wiki.segger.com/J-Link_Remote_Server](https://wiki.segger.com/J-Link_Remote_Server)
