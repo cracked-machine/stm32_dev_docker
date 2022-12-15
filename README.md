@@ -61,6 +61,8 @@ JLinkRemoteServer --select USB -Port 9999
 
 If you change  this port, be sure to change it in the [launch.json](examples/launch.json) settings so the `CortexDebug` extension knows how to connect to `JLinkRemoteServer`.
 
+---
+
 Below two common workflows are outlined: `Manual` and `VSCode`.
 
 ### Command line use
