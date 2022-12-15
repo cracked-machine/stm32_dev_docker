@@ -1,4 +1,13 @@
-## Build this docker image
+# Table of Contents
+1. [Build this docker image](#building)
+2. [Run container instance](#running)
+3. [Github Docker registry](#registry)
+4. [Development environment](#development)
+    1. [Command Line](#manual)
+    2. [CortexDebug](#vscode)
+5. [X11 Server](#x11)
+6. [Useful Links](#links)
+## 1. Build this docker image <a name="building"></a>
 
 Dockerfiles are available for the following dev environments:
 
@@ -7,7 +16,7 @@ Dockerfiles are available for the following dev environments:
 
 Use VSCode [tasks](.vscode/tasks.json) to build the images locally. 
 
-## Run container instance
+## 2. Run container instance <a name="running"></a>
 
 docker run --rm -it stm32_dev
 
@@ -15,7 +24,7 @@ Recommended to use VSCode with `Dev Containers` installed.
 
 See example [devcontainer.json](examples/devcontainer.json) file.
 
-## Github Docker registry
+## 3. Github Docker registry <a name="registry"></a>
 
 To pull the pre-built image/push a new image you must authenticate to the [github registry](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-container-registry#authenticating-to-the-container-registry) by creating a `Personal Access Token` and __exporting it to a variable in your environment__. Recommend putting it in ~/.bashrc.
 
@@ -28,7 +37,7 @@ docker push ghcr.io/<USER>/stm32_dev:10.3-2021.10
 docker pull ghcr.io/<USER>/stm32_dev:10.3-2021.10
 ```
 
-## Development environment
+## 4. Development environment <a name="development"></a>
 
 This container provides a consistent development environment independent of the host machine. 
 
@@ -65,7 +74,7 @@ If you change  this port, be sure to change it in the [launch.json](examples/lau
 
 Below two common workflows are outlined: `Manual` and `VSCode`.
 
-### Command line use
+### Command line <a name="manual"></a>
 1. Connect your JLink to the target and power on the target. 
 2. Connect your JLink to the USB port of the host.
 3. Start the JLinkRemoteServer:
@@ -86,7 +95,7 @@ Below two common workflows are outlined: `Manual` and `VSCode`.
             ```
             arm-none-eabi-gdb <elf>  -ex 'target remote localhost:<GDBSERVER_PORT>'
             ```
-### CortexDebug
+### CortexDebug <a name="vscode"></a>
 1. Connect your JLink to the target and power on the target. 
 2. Connect your JLink to the USB port of the host.
 3. Start the JLinkRemoteServer:
@@ -105,7 +114,7 @@ Below two common workflows are outlined: `Manual` and `VSCode`.
 
 5. Press F5 to start debug in VSCode
 
-## X11 Server
+## X11 Server <a name="x11"></a>
 
 Using JLink tools requires X11 Server installed on the host 
 
@@ -127,7 +136,7 @@ Using JLink tools requires X11 Server installed on the host
     - Change the `DISPLAY` option in [devcontainer.json](examples/devcontainer.json) to `host.docker.internal:0`
 
 
-## Useful Links
+## Useful Links <a name="links"></a>
 
 - [https://github.com/Marus/cortex-debug/blob/master/debug_attributes.md](https://github.com/Marus/cortex-debug/blob/master/debug_attributes.md)
 - [https://wiki.segger.com/J-Link_Remote_Server](https://wiki.segger.com/J-Link_Remote_Server)
