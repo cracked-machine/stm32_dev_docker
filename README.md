@@ -7,6 +7,10 @@
     2. [CortexDebug](#vscode)
 5. [X11 Server](#x11)
 6. [Useful Links](#links)
+
+Example use can be found in [MIDIPresetController](https://github.com/cracked-machine/MIDIPresetController) project.
+
+
 ## 1. Build this docker image <a name="building"></a>
 
 Dockerfiles are available for the following dev environments:
