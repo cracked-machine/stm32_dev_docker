@@ -8,8 +8,6 @@
 5. [X11 Server](#x11)
 6. [Useful Links](#links)
 
-Example use can be found in [MIDIPresetController](https://github.com/cracked-machine/MIDIPresetController) project.
-
 
 ## 1. Build this docker image <a name="building"></a>
 
@@ -147,3 +145,5 @@ Using JLink tools requires X11 Server installed on the host
 - [https://wiki.segger.com/J-Link_GDB_Server](https://wiki.segger.com/J-Link_GDB_Server)
 - [https://linux.die.net/man/1/gdb](https://linux.die.net/man/1/gdb)
 - [https://docs.docker.com/engine/reference/run/](https://docs.docker.com/engine/reference/run/)
+
+Example use can be found in [MIDIPresetController](https://github.com/cracked-machine/MIDIPresetController) project.
