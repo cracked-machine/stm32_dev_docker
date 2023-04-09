@@ -44,7 +44,7 @@ docker pull ghcr.io/<USER>/stm32_dev:10.3-2021.10
 This container provides a consistent development environment independent of the host machine. 
 
 All that is requred on the host machine is 
-- `SEGGER J-Link Remote Server V7.58` 
+- [SEGGER J-Link Remote Server](https://www.segger.com/downloads/jlink/) 
 - Ability to run docker containers
     - [Install docker](https://docs.docker.com/engine/install/ubuntu/)
     - [Configure the docker daemon](https://docs.docker.com/config/daemon/systemd/)
