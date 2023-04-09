@@ -46,7 +46,7 @@ This container provides a consistent development environment independent of the 
 All that is requred on the host machine is 
 - `SEGGER J-Link Remote Server V7.58` 
 - Ability to run docker containers
-    - [nstall docker](https://docs.docker.com/engine/install/ubuntu/)
+    - [Install docker](https://docs.docker.com/engine/install/ubuntu/)
     - Start docker on boot:
         
         ```
