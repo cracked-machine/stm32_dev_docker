@@ -51,6 +51,8 @@ RUN mkdir -p -m 777 /home/${USER}/.local/share/CMakeTools && \
     ]\n\
     ' > /home/${USER}/.local/share/CMakeTools/cmake-tools-kits.json
 
+RUN chmod 777 /home/${USER}/.local/share/CMakeTools/cmake-tools-kits.json
+
 ##################### 
 # CMake
 ####################
