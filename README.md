@@ -88,7 +88,7 @@ Below two common workflows are outlined: `Manual` and `VSCode`.
     ```
 4. From the docker guest terminal connect to the JLinkRemoteServer. 
 
-    Note: `<HOST>` is the localhost IP address of the host OS.
+    Note: `<HOST>` is the localhost IP address of the host OS. Port may not be needed...if you get connection error try omitting the port.
     - Manual
         
         - GDBServer
