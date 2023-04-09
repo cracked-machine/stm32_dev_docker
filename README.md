@@ -46,6 +46,13 @@ This container provides a consistent development environment independent of the 
 All that is requred on the host machine is 
 - `SEGGER J-Link Remote Server V7.58` 
 - Ability to run docker containers
+    - [nstall docker](https://docs.docker.com/engine/install/ubuntu/)
+    - Start docker on boot:
+        
+        ```
+        sudo systemctl enable docker.service
+        sudo systemctl enable containerd.service
+        ```
 - VSCode (Optional but recommeneded)
 
 Below is an overview of the communication between the guest/host/target.
