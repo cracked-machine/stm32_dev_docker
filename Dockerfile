@@ -74,7 +74,8 @@ RUN apt update -y && \
     libxrandr2 \
     libxfixes3 \
     libxcursor1 \
-    libfontconfig1
+    libfontconfig1 \
+    libutils
 
 ######################
 # Catch2
