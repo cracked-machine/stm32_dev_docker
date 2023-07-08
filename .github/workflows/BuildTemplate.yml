@@ -1,4 +1,4 @@
-name: Build Template
+name: Template for Building STM32 GNU Docker Images
 
 on:
   workflow_call:
@@ -18,7 +18,7 @@ on:
 
 jobs:
   # "yocto_core" package settings must have "embedded_linux_dockerfiles" added as a source repository with write permissions
-  build_stm32_docker:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Login to Docker Hub
