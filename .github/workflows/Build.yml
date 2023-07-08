@@ -8,6 +8,7 @@ on:
 jobs:
   # "yocto_core" package settings must have "embedded_linux_dockerfiles" added as a source repository with write permissions
   build_stm32_12.2.rel1:
+    uses: ./.github/workflows/BuildTemplate.yml
     env:
       ARM_URL: https://developer.arm.com/-/media/Files/downloads/gnu/12.2.rel1/binrel/arm-gnu-toolchain-12.2.rel1-x86_64-arm-none-eabi.tar.xz
       CMAKE_URL: https://github.com/Kitware/CMake/releases/download/v3.24.2/cmake-3.24.2-linux-x86_64.tar.gz
@@ -16,5 +17,4 @@ jobs:
       DOCKER_IMAGE: stm32_dev:${DOCKER_TAG}
     runs-on: ubuntu-latest
 
-    uses: ./.github/workflows/BuildTemplate.yml
 
