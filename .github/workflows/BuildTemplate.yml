@@ -1,15 +1,16 @@
 name: Build
 
-
-inputs:
-  ARM_URL: 
-    required: true
-  CMAKE_URL:
-    required: true
-  JLINK_URL:
-    required: true
-  DOCKER_IMAGE:
-    required: true
+on:
+  build_stm32:
+    inputs:
+      ARM_URL: 
+        required: true
+      CMAKE_URL:
+        required: true
+      JLINK_URL:
+        required: true
+      DOCKER_IMAGE:
+        required: true
 
 jobs:
   # "yocto_core" package settings must have "embedded_linux_dockerfiles" added as a source repository with write permissions
