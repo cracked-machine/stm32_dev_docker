@@ -75,7 +75,7 @@ RUN apt update -y && \
     libxfixes3 \
     libxcursor1 \
     libfontconfig1 \
-    libutils
+    usbutils
 
 ######################
 # Catch2
