@@ -107,6 +107,8 @@ RUN echo \
 ###############
 ## finish setup
 ###############
+RUN chown builder  /home/$USER/.local/. /home/$USER/.local/share
+RUN echo "export PATH=$PATH:/home/builder/.local/bin" >> /home/builder/.bashrc
 USER $USER
 WORKDIR /home/$USER/
 CMD /bin/bash

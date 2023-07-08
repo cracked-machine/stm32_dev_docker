@@ -13,14 +13,17 @@
 
 Dockerfiles are available for the following dev environments:
 
-- ARM Cross Toolchain: GCC 10.3.1 arm-none-eabi
-- ARM Cross Toolchain: GCC 11.3 arm-none-eabi
+- ARM Cross Toolchain: GCC 10.3-2021.10 arm-none-eabi
+- ARM Cross Toolchain: GCC 11.3.rel1 arm-none-eabi
+- ARM Cross Toolchain: GCC 12.2.rel1 arm-none-eabi
 
-Use VSCode [tasks](.vscode/tasks.json) to build the images locally. 
+Push changes to github.com to build with the CI pipeline. __RECOMMENDED__ 
+
+For debug, use VSCode [tasks](.vscode/tasks.json) to build the images locally. 
 
 ## 2. Run container instance <a name="running"></a>
 
-docker run --rm -it stm32_dev
+docker run -it --privileged stm32_dev:<TAG>
 
 Recommended to use VSCode with `Dev Containers` installed. 
 
