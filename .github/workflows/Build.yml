@@ -17,5 +17,4 @@ jobs:
     runs-on: ubuntu-latest
 
     uses: ./.github/workflows/BuildTemplate.yml
-    with: 
-      jobName: 'build_stm32'
+
