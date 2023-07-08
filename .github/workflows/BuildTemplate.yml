@@ -1,7 +1,7 @@
 name: Build
 
 on:
-  build_stm32:
+  workflow_call:
     inputs:
       ARM_URL: 
         required: true
