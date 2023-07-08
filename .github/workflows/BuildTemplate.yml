@@ -31,4 +31,4 @@ jobs:
       - name: Build stm32
         run: docker build --build-arg ARM_URL=${{ inputs.ARM_URL }} --build-arg CMAKE_URL=${{ inputs.CMAKE_URL }} --build-arg JLINK_URL=${{ inputs.JLINK_URL }} -t ghcr.io/${{ github.actor }}/${{ inputs.DOCKER_IMAGE }} -f ./Dockerfile .
       - name: Push stm32
-        run: env && echo docker push ghcr.io/${{ github.actor }}/${DOCKER_IMAGE}
+        run: env && docker push ghcr.io/${{ github.actor }}/${{ inputs.DOCKER_IMAGE }}
